@@ -1,1 +1,173 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1194px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-bottom: 94px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-main {
+  flex-grow: 1;
+}
+
+.content-main_title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content-film {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.content-film_img {
+  width: calc((100% - 28px) / 2);
+  display: flex;
+  justify-content: center;
+}
+
+.content-film_img img {
+  width: 100%;
+  display: block;
+  max-width: 450px;
+}
+
+.content-film_info {
+  width: calc((100% - 28px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-film_title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.content-film_title h1 {
+  color: rgb(0, 0, 0);
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin: 0;
+}
+
+.content-film_title p {
+  color: rgb(0, 0, 0);
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+}
+
+.content-film_info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-film_info-content:last-child {
+  padding-bottom: 0;
+}
+
+.content-film_info-description {
+  color: rgb(134, 134, 134);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0;
+}
+
+.content-film_info-rating {
+  color: rgb(4, 163, 30);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.content-film_info-text {
+  color: rgb(0, 0, 0);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.content-film_info-btn {
+  width: 264px;
+  height: 50px;
+  border-radius: 5px;
+  background: rgb(255, 73, 73);
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+@media (max-width: 991px) {
+  .content-film {
+    flex-direction: column;
+  }
+  .content-film_img {
+    width: 100%;
+  }
+  .content-film_info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-controls {
+    display: none;
+  }
+  .header-controls_mobile {
+    display: block;
+    align-self: center;
+  }
+  .content-box {
+    flex-direction: column;
+  }
+}
