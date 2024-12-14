@@ -3,7 +3,8 @@ export interface Film {
   title: string;
   original: string;
   category: string;
-  rating: 7.8;
+  rating: number;
   image: string;
   link: string;
+  description?: string;
 }

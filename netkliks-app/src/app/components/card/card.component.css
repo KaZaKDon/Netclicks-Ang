@@ -1,5 +1,9 @@
-.content-cards_item {
+:host {
   width: calc((100% - 60px) / 3);
+}
+
+.content-cards_item {
+  width: 100%;
   text-decoration: none;
 }
 
@@ -51,13 +55,13 @@
   margin: 0;
 }
 @media (max-width: 991px) {
-  .content-cards_item {
+  :host {
     width: calc((100% - 30px) / 2);
   }
 }
 
 @media (max-width: 480px) {
-  .content-cards_item {
+  :host {
     min-width: 100%;
   }
 }
